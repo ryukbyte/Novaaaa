@@ -1,0 +1,185 @@
+
+#root {
+  min-height: 100vh;
+}
+
+.login-page {
+  min-height: 100vh;
+  padding: 30px 7%;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(ellipse at 50% 40%, #252849 0%, transparent 55%),
+    #11152b;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font: 800 29px 'Manrope', sans-serif;
+  letter-spacing: -1.5px;
+}
+
+.brand-icon {
+  color: #b9aeff;
+  font-size: 32px;
+}
+
+.nav-note,
+.page-footer {
+  color: #898eac;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 430px;
+  margin: auto;
+  padding: 38px;
+  border: 1px solid #343955;
+  border-radius: 24px;
+  background: rgba(25, 30, 57, 0.88);
+  box-shadow: 0 24px 80px #080b1c55;
+}
+
+.welcome-icon {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 25px;
+  border-radius: 17px;
+  background: #302e55;
+  color: #c7beff;
+  font-size: 28px;
+}
+
+.eyebrow {
+  color: #b9aeff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+h1 {
+  margin: 13px 0;
+  font: 800 clamp(30px, 5vw, 39px)/1.2 'Manrope', sans-serif;
+  letter-spacing: -1.8px;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  color: #a9aec8;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+label {
+  margin-top: 9px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  min-height: 49px;
+  padding: 0 14px;
+  border: 1px solid #414764;
+  border-radius: 10px;
+  outline: none;
+  background: #202540;
+  color: #fff;
+  font-size: 13px;
+  transition: border-color 180ms, box-shadow 180ms;
+}
+
+input::placeholder {
+  color: #858ba8;
+}
+
+input:focus {
+  border-color: #b9aeff;
+  box-shadow: 0 0 0 3px #b9aeff20;
+}
+
+.message {
+  margin: 5px 0;
+  color: #ffaaaa;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+button {
+  min-height: 50px;
+  margin-top: 12px;
+  border: 0;
+  border-radius: 10px;
+  background: #b9aeff;
+  color: #17152b;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 180ms, background 180ms;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: #d0c9ff;
+}
+
+button:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+
+.footer-note {
+  margin: 27px 0 0;
+  color: #9298b6;
+  text-align: center;
+  font-size: 11px;
+}
+
+.page-footer {
+  padding: 18px 0 0;
+  text-align: center;
+  font-size: 9px;
+}
+
+.page-footer span {
+  color: #b9aeff;
+  margin-left: 6px;
+}
+
+@media (max-width: 480px) {
+  .login-page {
+    padding: 23px 18px;
+  }
+
+  .nav-note {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .login-card {
+    padding: 27px 22px;
+    border-radius: 19px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
